@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button onclick="showSection('login')">Login</button>
+        <button onclick="showSection('unlock')">Unlock Door</button>
+        <button onclick="showSection('user-management')">User Management</button>
+        <button onclick="showSection('create-user')">Create User</button>
+        <button onclick="showSection('entry-log')">Entry Log</button>
+    </nav>
+    <main>
+        <section id="login" class="active">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </section>
+        <section id="unlock">
+            <h2>Unlock Door</h2>
+            <button onclick="unlockDoor()">Unlock</button>
+        </section>
+        <section id="user-management">
+            <h2>User Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>UserId</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Last Entry</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table-body">
+                    <!-- User rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+        <section id="create-user">
+            <h2>Create User</h2>
+            <input type="text" id="first-name" placeholder="First Name">
+            <input type="text" id="last-name" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Email">
+            <button onclick="createUser()">Create User</button>
+        </section>
+        <section id="entry-log">
+            <h2>Entry Log</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>UserId</th>
+                        <th>Timestamp</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="entry-log-body">
+                    <!-- Entry log rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

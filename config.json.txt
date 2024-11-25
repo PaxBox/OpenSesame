@@ -1,0 +1,6 @@
+{
+    "jwt": {
+        "tokenLifetime": 1800, 
+        "tokenExpiration": 600 
+    }
+}
