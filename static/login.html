@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="button.js" defer></script>
-    <title>Login</title>
+    <title>Open Sesame Login</title>
 </head>
 <body>
-    <nav>
-        <button onclick="location.href='index.html'">Back to Home</button>
-    </nav>
-    <h1>Login</h1>
-    <label>Username</label>
-    <input type="text" placeholder="Username">
-    <label>Password</label>
-    <input type="text" placeholder="Password" name="psw" required>
-    <div class="loginContainer">
-        <button class="loginButtons">Confirm</button>
-    </div>
+    <header>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+        </nav>
+    </header>
+    <main>
+        <section class="wrapper">
+            <form>
+                <h1>Login</h1>
+                <label for="usrname">Username</label>
+                <input type="text" id="usrname" placeholder="Username" required>
+                <label for="psword">Password</label>
+                <input type="text" id="psword" placeholder="Password" required>
+                <label for="chkbox">
+                    <input type="checkbox" id="chkbox"> Remember me
+                </label>
+                <button class="button">Login</button>
+            </form> 
+        </section>      
+    </main>    
 </body>
 </html>
