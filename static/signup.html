@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="button.js" defer></script>
-    <title>Open Sesame Sign Up</title>
+    <script src="buttons.js" defer></script>
+    <title>Open Sesame Signup</title>
 </head>
 <body>
     <header>
         <nav>
-            <button onclick="location.href='index.html'">Home</button>
+            <button class="button" id="navHomeButton">Home</button>
         </nav>
     </header>
     <main>
-        <form>
-            <h1>Sign up</h1>
-            <label for="usrname">Username</label>
-            <input type="text" id="usrname" placeholder="Username" required>
-            <label for="psword">Password</label>
-            <input type="text" id="psword" placeholder="Password" required>
-            <button class="button">Confirm</button>
-        </form>            
+        <section class="wrapper">
+            <form>
+                <h1>Signup</h1>
+                <label for="usrnameSign">Username</label>
+                <input type="text" id="usrnameSign" placeholder="Username" required>
+                <label for="pswordSign">Password</label>
+                <input type="text" id="pswordSign" placeholder="Password" required>
+                <label for="chkbox">
+                    <input type="checkbox" id="chkbox"> Remember me
+                </label>
+                <button class="button" id="signupButton">Signup</button>
+            </form> 
+        </section>      
     </main>    
 </body>
 </html>

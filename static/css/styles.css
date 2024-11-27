@@ -18,7 +18,7 @@ main {
 .wrapper {
     display: flex;
     width: 400px;
-    background: purple;
+    background: rgba(100, 92, 77, 0.842);
     color: #fff;
     border-radius: 10px;
     padding: 10px;

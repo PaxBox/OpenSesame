@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "userid": 0,
+            "username": "",
+            "password_hash": "",
+            "seed": ""
+        },
+        {
+            "userid": 1,
+            "username": "wer",
+            "password_hash": "werw",
+            "seed": 123
+        },
+        {
+            "userid": 2,
+            "username": "eytr",
+            "password_hash": "werw",
+            "seed": 123
+        }
+    ]
+}
